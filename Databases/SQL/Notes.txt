@@ -1,0 +1,91 @@
+SQL databases are made of tables.
+Each tables are made of columns and rows.
+
+A column defines a type of data : a name, an age, etc
+A row defines an occurence of that type of data : a person.
+
+In a table, we can find a PRIMARY key, which uniquely identifies a row.
+A primary key can be natural or surrogate. A natural primary key represents something that has a meaning in real life,
+while a surrogate doesn't.
+
+We can also find foreign keys that maps with another table's primary key.
+
+The primary key can be composed of two columns. This is called a composite key.
+
+**********************************************************************************
+
+SQL Basics
+
+1. Creating a table
+CREATE TABLE table_name (
+    column_name TYPE,
+    column_name TYPE CONSTRAINT,
+    column_name TYPE,
+
+    PRIMARY KEY(column_name)
+);
+
+2. Delete a table
+DROP TABLE table_name;
+
+3. Describe a table
+DESCRIBE table_name;
+
+4. Modify a table
+ALTER TABLE table_name ADD column_name TYPE;
+
+5. Insert data
+INSERT INTO table_name VALUES(all values);
+INSERT INTO table_name(column_name, ...) VALUES(column matching values);
+
+6. Constraints
+
+NOT NULL : Avoid a column to contain a NULL row
+UNIQUE : Avoid two rows to have the same value
+DEFAULT : Allow to specify a default value to a column
+AUTO_INCREMENT : Auto increment a primary key
+
+7. Update a row
+UPDATE table_name SET column_name = 'name' WHERE column_name = 'old_name';
+
+8. Delete rows
+DELETE FROM table_name WHERE condition;
+
+9. Retrieve from the database
+SELECT * FROM table_name;  will select everything from the table
+
+SELECT column_name, ... FROM table_name; will select only the specified column
+SELECT table_name.column_name FROM table_name;
+
+SELECT column_name FROM table_name ORDER BY column_name DESC; will order the results by a specific column in descending order.
+
+SELECT * FROM table_name LIMIT x; will limit results to x rows.
+
+SELECT * FROM table_name WHERE column_name = 'column_name';
+The condition can use OR / AND / < / > / = / <> / <= / >=.
+
+SELECT * FROM table_name WHERE column_name IN (options);
+
+10. Functions
+AVG
+SUM
+COUNT
+
+11. Wildcards
+SELECT name FROM table WHERE name LIKE '%jones'; One or more characters before
+SELECT name FROM table WHERE name LIKE '_jones'; One character exactly
+
+12. Union
+SELECT * FROM table1 UNION SELECT * FROM table2;
+
+13. Joins
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+FROM employee
+JOIN branch ON employee.emp_id = branch.mgr_id;
+
+Joins two or more tables into one single table when two of them columns are identicals.
+LEFT JOIN and RIGHT JOINS allows to select more from one of the table.
+
+14. Nested queries
+SELECT * FROM table1 WHERE id IN (SELECT id FROM table2);
+
