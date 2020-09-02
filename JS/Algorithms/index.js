@@ -37,3 +37,81 @@ console.log(
 );
 
 /* ****************************************************************** */
+
+// Inventory Update
+
+/* Compare and update an inventory (2D array) with a delivery (2D array). The result must be
+a new array containing updated data sorted alphabetically */
+
+function updateInventory(arr1, arr2) {
+	// Iterate through arr2
+	for (let article of arr2) {
+		const index = arr1.findIndex((art) => art[1] === article[1]);
+		if (index !== -1) {
+			arr1[index][0] += article[0];
+		} else {
+			arr1.push(article);
+		}
+	}
+	
+	return arr1.sort((a, b) => a[1].localeCompare(b[1]));
+}
+
+// Tests
+
+console.log(
+	updateInventory(
+		[
+			[21, "Bowling Ball"],
+			[2, "Dirty Sock"],
+			[1, "Hair Pin"],
+			[5, "Microphone"],
+		],
+		[
+			[2, "Hair Pin"],
+			[3, "Half-Eaten Apple"],
+			[67, "Bowling Ball"],
+			[7, "Toothpaste"],
+		]
+	)
+);
+console.log(
+	updateInventory(
+		[
+			[21, "Bowling Ball"],
+			[2, "Dirty Sock"],
+			[1, "Hair Pin"],
+			[5, "Microphone"],
+		],
+		[]
+	)
+);
+console.log(
+	updateInventory(
+		[],
+		[
+			[2, "Hair Pin"],
+			[3, "Half-Eaten Apple"],
+			[67, "Bowling Ball"],
+			[7, "Toothpaste"],
+		]
+	)
+);
+console.log(
+	updateInventory(
+		[
+			[0, "Bowling Ball"],
+			[0, "Dirty Sock"],
+			[0, "Hair Pin"],
+			[0, "Microphone"],
+		],
+		[
+			[1, "Hair Pin"],
+			[1, "Half-Eaten Apple"],
+			[1, "Bowling Ball"],
+			[1, "Toothpaste"],
+		]
+	)
+);
+
+/* ****************************************************************** */
