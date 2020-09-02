@@ -1,2 +1,2 @@
-# 100d-js
+# 100days
 A repo where you can find my progress during the 100 days of code challenge
