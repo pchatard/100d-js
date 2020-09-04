@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Box model</title>
+	</head>
+	<body>
+		<div class="block padded">
+			I am div element, i.e. a block element. Width and height affect me.
+			My padding affect the paragraph position behind me.
+		</div>
+		<p class="block padded">
+			I am a p element, i.e. a block element too.
+			<span class="inline">
+				I'm an inline block. My width property won't apply and my
+				padding and margin do not push the div over me. :(
+			</span>
+		</p>
+
+		<p class="block padded">
+			I am another p element.
+			<span class="inline-block">
+				This new span has an inline-block display property. My width
+				applies and I can push the paragraph that's above me!
+			</span>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+.block {
+	/* width: 600px; */
+	border: 1px solid blue;
+    margin: 0;
+}
+
+.padded {
+    padding: 20px 0;
+}
+
+.inline {
+	border: 1px solid red;
+	padding: 50px 0;
+}
+
+.inline-block {
+	display: inline-block;
+	border: 1px solid green;
+	width: 400px;
+	padding: 50px 0;
+}
