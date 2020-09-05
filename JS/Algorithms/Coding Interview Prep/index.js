@@ -53,7 +53,7 @@ function updateInventory(arr1, arr2) {
 			arr1.push(article);
 		}
 	}
-	
+
 	return arr1.sort((a, b) => a[1].localeCompare(b[1]));
 }
 
@@ -115,3 +115,4 @@ console.log(
 );
 
 /* ****************************************************************** */
+
