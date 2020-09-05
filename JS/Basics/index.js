@@ -30,6 +30,24 @@ function sayHello(name) {
 
 sayHello("Pierre");
 
+// Immediately invoked function expressions (IIFE)
+(function() {
+	console.log("I'm an IIFE");
+})();
+
+/* They used to be used in libraries to avoid scope issues between
+variable names defined in your program and variable names defined in the library */
+
+// Anonymous function
+const magic = function () {
+	return new Date();
+};
+
+// Can be converted to an arrow function
+const newMagic = () => new Date();
+const newMagicParameter = (param) => console.log(param);
+
+
 /* ************************************************************ */
 
 // Scope
@@ -67,14 +85,5 @@ var myVar = "Hey";
 let myNewVar = "Hello";
 // let myNewVar = "Hey";
 
-
 /* ************************************************************ */
 
-// Anonymous function
-const magic = function() {
-    return new Date();
-}
-
-// Can be converted to an arrow function
-const newMagic = () => new Date();
-const newMagicParameter = param => console.log(param);
