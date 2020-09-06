@@ -87,3 +87,8 @@ let myNewVar = "Hello";
 
 /* ************************************************************ */
 
+// Hoisting
+
+cat = 1;
+console.log(cat);
+var cat;
