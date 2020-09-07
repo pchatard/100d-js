@@ -6,6 +6,11 @@ This repo holds all my progress during the #100DaysOfCode challenge.
 ### CSS
   * Images and Backgrounds
   * Display and Position
+  * Units
+  * Colors
+
+### Recreate a website
+  * [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca)
 
 ## Day 6
 ### JavaScript

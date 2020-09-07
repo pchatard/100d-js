@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* 1rem = 10px */
+	font-size: 62.5%;
+}
+
+body {
+	background-image: url(background.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header {
+	height: 10vh;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > div {
+	height: 70%;
+	margin: 2rem;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links {
+}
+
+.meteo {
+}
+
+main {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+main * {
+	background-color: white;
+}
+
+footer {
+	height: 10vh;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer > div {
+    height: 70%;
+    background-color: white;
+}
