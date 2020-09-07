@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	z-index: 0;
+}
+
+.container div {
+	background-color: red;
+	border: 2px solid black;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: auto;
+}
+
+p {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	border: 1px solid white;
+}
+
+.static {
+	position: static;
+}
+
+.relative {
+	position: relative;
+	top: 15px;
+	left: 10px;
+}
+
+.absolute {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.fixed {
+	position: fixed;
+	top: 300px;
+	left: 30px;
+}
+
+.sticky {
+    position: sticky;
+    top: 20px;
+    left: 30px;
+}

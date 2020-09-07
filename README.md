@@ -5,6 +5,7 @@ This repo holds all my progress during the #100DaysOfCode challenge.
 ## Day 7
 ### CSS
   * Images and Backgrounds
+  * Display and Position
 
 ## Day 6
 ### JavaScript
