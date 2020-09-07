@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.clip {
+	background-color: red;
+	padding: 30px;
+	width: 20%;
+	height: 200px;
+}
+
+.border {
+    border: 5px dashed black;
+    background-image: url(/Users/pierre/Pictures/Pebbles/23d9fdf33b.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-clip: border-box;
+}
+
+.padding {
+	border: 2px dashed black;
+    background-clip: padding-box;
+}
+
+.content {
+	border: 2px dashed black;
+	background-clip: content-box;
+}
+
+.text {
+	border: 2px dashed black;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: rgba(0, 0, 0, 0.2);
+}
