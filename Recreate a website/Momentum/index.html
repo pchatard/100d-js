@@ -4,21 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="/Users/pierre/Documents/Code/100daysofcode/100days/Recreate a website/fontawesome-free-5.14.0-web/css/all.css"
+			rel="stylesheet"
+		/>
 		<title>Momentum</title>
 	</head>
 	<body>
 		<header>
 			<div class="links">
-				<div>Links</div>
+				<p>Links</p>
 				<form action="#">
+					<i class="fas fa-search"></i>
 					<input type="text" name="search" id="search" />
 				</form>
-			</div>
+            </div>
+            
 			<div class="meteo">
-				<p>icon</p>
+				<i class="fas fa-sun"></i>
 				<div>
-					<p>21°C</p>
-					<p>Royat</p>
+					<p class="temp">21°C</p>
+					<p class="city">Royat</p>
 				</div>
 			</div>
 		</header>
@@ -30,14 +36,24 @@
 				<label for="focus">What is your main focus today?</label>
 				<input type="text" name="focus" id="focus" />
 			</form>
-        </main>
-        
+		</main>
+
 		<footer>
-            <div class="credits"></div>
-            <div class="quote"></div>
-            <div class="todo"></div>
-        </footer>
-		<!-- Haleakala Nat'l Park, HI, USA
-    Sean Bernstein / Unsplash -->
+			<div class="credits">
+				<i class="fas fa-cog"></i>
+				<div class="credits-content">
+					<p>Haleakala Nat'l Park, HI, USA</p>
+					<p>Sean Bernstein / Unsplash</p>
+				</div>
+			</div>
+			<div class="quote">
+				<p class="quote-text">
+					“You are stronger than your challenges and your challenges
+					are making you stronger.”
+				</p>
+				<p class="quote-details">Karen Salmansohn</p>
+			</div>
+			<div class="todo">Todo</div>
+		</footer>
 	</body>
 </html>

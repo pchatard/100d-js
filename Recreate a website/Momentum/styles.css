@@ -7,17 +7,20 @@
 html {
 	/* 1rem = 10px */
 	font-size: 62.5%;
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro",
+		"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
 	background-image: url(background.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-size: 1.6rem;
 }
 
 header {
 	height: 10vh;
-	border: 1px solid black;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -26,16 +29,76 @@ header {
 header > div {
 	height: 70%;
 	margin: 2rem;
-	background-color: white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .links {
+	cursor: pointer;
+}
+
+.links p {
+    padding-right: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.links p:hover {
+    color: rgb(255, 255, 255);
+}
+
+.links form {
+    position: relative;
+    top: .4rem;
+}
+
+.links form i {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.links form:hover i {
+    color: rgba(255, 255, 255, 1);
+}
+
+.links form input {
+    width: 20rem;
+    font-size: 1.6rem;
+    color: white;
+	outline: none;
+	background: transparent;
+    border: none;
+    padding-left: 2.2rem;
+    padding-bottom: .6rem;
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.links form:hover input {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.links form input:active {
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .meteo {
+    color: white;
+    cursor: pointer;
+}
+
+.meteo i {
+    margin-right: .6rem;
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+}
+
+.meteo .temp {
+    font-size: 2.2rem;
+}
+
+.meteo .city {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 main {
@@ -46,9 +109,7 @@ main {
 	align-items: center;
 }
 
-main * {
-	background-color: white;
-}
+
 
 footer {
 	height: 10vh;
@@ -59,6 +120,24 @@ footer {
 }
 
 footer > div {
-    height: 70%;
-    background-color: white;
+	height: 70%;
+	margin: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.credits {
+}
+.quote {
+	flex-direction: column;
+}
+.todo {
+}
+
+input[type="text"] {
+	outline: none;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 }
