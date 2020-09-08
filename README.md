@@ -2,6 +2,19 @@
 
 This repo holds all my progress during the #100DaysOfCode challenge.
 
+## Day 8
+### JavaScript
+  * Functions (generator functions, higher order functions)
+  * ES6 features (rest, spread, destructuring, import/export, class)
+  * Asynchronous JavaScript (Promises, async/await)
+
+### Algorithms
+  * First part of [Intermediate Algorithm Scripting](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/)
+
+### Recreate a website
+  * Continue [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca) copy
+
+
 ## Day 7
 ### CSS
   * Images and Backgrounds
@@ -10,7 +23,7 @@ This repo holds all my progress during the #100DaysOfCode challenge.
   * Colors
 
 ### Recreate a website
-  * [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca)
+  * [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca) copy
 
 ## Day 6
 ### JavaScript
