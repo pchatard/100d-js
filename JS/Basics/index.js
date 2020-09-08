@@ -47,6 +47,18 @@ const magic = function () {
 const newMagic = () => new Date();
 const newMagicParameter = (param) => console.log(param);
 
+// Generator functions
+function* gen(i) {
+    yield i + 2;
+    yield i + 4;
+    return i;
+}
+
+let gene = gen(10);
+console.log('Generator: ' + gene.next().value);
+console.log('Generator: ' + gene.next().done);
+console.log('Generator: ' + gene.next().done);
+
 
 /* ************************************************************ */
 
