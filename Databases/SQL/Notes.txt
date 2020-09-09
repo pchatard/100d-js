@@ -89,3 +89,19 @@ LEFT JOIN and RIGHT JOINS allows to select more from one of the table.
 14. Nested queries
 SELECT * FROM table1 WHERE id IN (SELECT id FROM table2);
 
+**********************************************************************************
+
+SQL Transactions
+
+A transaction is a unit of work that should be treated as a whole.
+Either every query succeed, either everything should be cancelled.
+
+A transaction should have the following properties known as ACID:
+A - Atomic: Everything should succeed. If one fails, every other changes made before should be undone.
+C - Consistent: A modification should create a valid state from a valid state.
+I - Isolated: Every transaction should be done as it was the only one running on the system.
+Two transactions running at the same time should be independant from each other.
+D - Durable: When a transaction is over, its new state should persist.
+
+A transaction is validated thanks to the COMMIT; statement, or rejected with ROLLBACK;
+We can start a transaction with START TRANSACTION;

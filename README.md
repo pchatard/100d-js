@@ -2,6 +2,14 @@
 
 This repo holds all my progress during the #100DaysOfCode challenge.
 
+## Day 9
+### SQL
+  * Transactions and ACID properties
+  * N+1 Problem
+
+### Algorithms
+  * [Intermediate Algorithm Scripting](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/)
+
 ## Day 8
 ### JavaScript
   * Functions (generator functions, higher order functions)
