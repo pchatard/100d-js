@@ -13,12 +13,12 @@ html {
 }
 
 body {
-	background-image: url(background.jpeg);
-    background-size: cover;
-    background-position-y: -16rem;
+	background-image: url(background.jpg);
+	background-size: cover;
+	background-position-y: -30rem;
 	background-repeat: no-repeat;
-    font-size: 1.6rem;
-    overflow: hidden;
+	font-size: 1.6rem;
+	overflow: hidden;
 }
 
 header {
@@ -41,37 +41,37 @@ header > div {
 }
 
 .links p {
-    padding-right: 1.5rem;
-    color: rgba(255, 255, 255, 0.6);
+	padding-right: 1.5rem;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .links p:hover {
-    color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 .links form {
-    position: relative;
-    top: .4rem;
+	position: relative;
+	top: 0.4rem;
 }
 
 .links form i {
-    position: absolute;
-    color: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .links form:hover i {
-    color: rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 1);
 }
 
 .links form input {
-    width: 20rem;
-    font-size: 1.6rem;
-    color: white;
+	width: 20rem;
+	font-size: 1.6rem;
+	color: white;
 	outline: none;
 	background: transparent;
-    border: none;
-    padding-left: 2.2rem;
-    padding-bottom: .6rem;
+	border: none;
+	padding-left: 2.2rem;
+	padding-bottom: 0.6rem;
 	border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
@@ -80,27 +80,27 @@ header > div {
 }
 
 .links form input:active {
-    border-bottom: 2px solid rgb(255, 255, 255);
+	border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .meteo {
-    color: white;
-    cursor: pointer;
+	color: white;
+	cursor: pointer;
 }
 
 .meteo i {
-    margin-right: .6rem;
-    font-size: 2rem;
-    padding-bottom: 1.2rem;
+	margin-right: 0.6rem;
+	font-size: 2rem;
+	padding-bottom: 1.2rem;
 }
 
 .meteo .temp {
-    font-size: 2.2rem;
+	font-size: 2.2rem;
 }
 
 .meteo .city {
-    font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.6);
+	font-size: 1.3rem;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 main {
@@ -112,35 +112,36 @@ main {
 }
 
 main > div {
-    cursor: default;
+	cursor: default;
 }
 
 .hour {
-    font-size: 15rem;
-    font-weight: bold;
+	font-size: 15rem;
+	font-weight: 400;
+	margin-bottom: -1rem;
 }
 
 .greeting {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 3.5rem;
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 3.5rem;
 }
 
 main form {
-    font-size: 3.3rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
+	font-size: 3.2rem;
+	margin-bottom: 5rem;
 }
 
 main form label {
-    display: block;
+	display: block;
 }
 
 main form input {
-    width: 100%;
-    font-size: 2.8rem;
-    font-weight: 400;
-    color: white;
+	width: 100%;
+	font-size: 2.8rem;
+	font-weight: 400;
+	color: white;
+	text-align: center;
 }
 
 footer {
@@ -159,11 +160,62 @@ footer > div {
 }
 
 .credits {
+	display: flex;
+	justify-content: space-between;
 }
+
+.credits i {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.credits-content {
+	margin-left: 1rem;
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.credits *:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.credits i:hover {
+    cursor: pointer;
+}
+
 .quote {
-	flex-direction: column;
+    flex-direction: column;
+    padding-right: 8rem;
 }
+
+.quote-details {
+    opacity: 0;
+    font-size: 1.2rem;
+    transform: translateY(-1.3rem);
+    color: rgba(255, 255, 255, 0.6);
+    transition: all .2s;
+}
+
+.quote-text {
+    transform: translateY(1rem);
+    transition: all .2s;
+}
+
+.quote:hover .quote-details {
+    transform: translateY(-.5rem);
+    opacity: 1;
+}
+
+.quote:hover .quote-text {
+    transform: translateY(0);
+}
+
 .todo {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.todo:hover {
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
 }
 
 input[type="text"] {
