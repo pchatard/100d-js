@@ -2,6 +2,17 @@
 
 This repo holds all my progress during the #100DaysOfCode challenge.
 
+## Day 10
+### NodeJS Express MySQL
+  * Create a connection with a database
+  * Learn about folder structure
+
+### Recreate a website
+  * [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca) copy, part 2
+
+### Algorithms
+  * [Intermediate Algorithm Scripting](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/)
+
 ## Day 9
 ### SQL
   * Transactions and ACID properties
