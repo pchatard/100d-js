@@ -19,3 +19,13 @@
 	width: 400px;
 	padding: 50px 0;
 }
+
+.shadows {
+    margin: 100px auto;
+    width: 200px;
+    height: 100px;
+
+    border: 2px solid black;
+    border-radius: 10px 5px 20px 40px;
+    box-shadow: 10px 0px grey, 30px 15px 5px 10px skyblue;
+}
