@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Toggle Button</title>
-</head>
-<body>
-    <div>
-        <input type="radio" name="toggle" id="toggle-on" value="on" checked>
-        <label for="toggle-on">ON</label>
-        <input type="radio" name="toggle" id="toggle-off" value="off">
-        <label for="toggle-off">OFF</label>
-    </div>
-    <script src="index.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Toggle Button</title>
+	</head>
+	<body>
+		<div id="toggle-btn">
+			<input
+				type="radio"
+				name="toggle"
+				id="toggle-on"
+				value="on"
+				checked
+			/>
+			<label class="toggle-btn-on" for="toggle-on"></label>
+
+			<input type="radio" name="toggle" id="toggle-off" value="off" />
+			<label class="toggle-btn-off" for="toggle-off"></label>
+		</div>
+		<script src="index.js"></script>
+	</body>
 </html>
