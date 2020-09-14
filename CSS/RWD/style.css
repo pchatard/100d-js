@@ -1,0 +1,31 @@
+body {
+	background-color: red;
+}
+
+/* 900 - 1200px width screens (tablet landscapes) */
+@media (max-width: 1200px) {
+	body {
+		background-color: blue;
+	}
+}
+
+/* 600 - 900px width screens (tablet portrait) */
+@media (max-width: 900px) {
+	body {
+		background-color: green;
+	}
+}
+
+/* 0 - 600px width screens (phones) */
+@media (max-width: 600px) {
+	body {
+		background-color: yellow;
+	}
+}
+
+/* 1800px - Plus width screens (Ultra wide screens) */
+@media (min-width: 1800px) {
+	body {
+		background-color: teal;
+	}
+}
