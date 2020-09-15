@@ -4,8 +4,18 @@
 Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
 */
 
+function spinalCaseMe(str) {
+	const regexSpliter = /\s+|_+/g;
+	const newStr = str.replace(/([a-z])([A-Z])/g, "$1 $2");
+	const words = newStr.replace(regexSpliter, "-").toLowerCase();
+	return words;
+}
+
 function spinalCase(str) {
-    // See regex first
+	return str
+		.split(/\s|_|(?=[A-Z])/)
+		.join("-")
+		.toLowerCase();
 }
 
 // Tests
