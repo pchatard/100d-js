@@ -14,27 +14,25 @@ Check the assertion tests for examples.
 */
 
 function uniteUniqueMe(...arrs) {
-    const unique = [];
-    arrs.forEach((arr) => {
-        arr.forEach(value => {
-            const index = unique.findIndex(el => el === value);
-            if (index === -1) {
-                unique.push(value);
-            }
-        })
-    });
+	const unique = [];
+	arrs.forEach((arr) => {
+		arr.forEach((value) => {
+			const index = unique.findIndex((el) => el === value);
+			if (index === -1) {
+				unique.push(value);
+			}
+		});
+	});
 	return unique;
 }
 
 function uniteUnique(...arrays) {
-    //make an array out of the given arrays and flatten it (using the spread operator)
-    const flatArray = [].concat(...arrays);
-  
-    // create a Set which clears any duplicates since it's a regulat set and not a multiset
-    return [...new Set(flatArray)];
-  }
-  
-  
+	//make an array out of the given arrays and flatten it (using the spread operator)
+	const flatArray = [].concat(...arrays);
+
+	// create a Set which clears any duplicates since it's a regulat set and not a multiset
+	return [...new Set(flatArray)];
+}
 
 // Tests
 
