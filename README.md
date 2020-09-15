@@ -2,6 +2,33 @@
 
 This repo holds all my progress during the #100DaysOfCode challenge.
 
+## Day 15
+### JavaScript
+  * Regular Expressions
+
+### Algorithms
+  * [Intermediate Algorithm Scripting](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/)
+
+## Day 14
+### CSS
+  * Fonts, lists
+  * Media queries
+  * Flexbox
+
+## Day 13
+### HTML and CSS
+  * Created a custom Hamburger Menu Button
+  * Created a custom Toggle Button
+
+## Day 12
+### Algorithms
+  * [Intermediate Algorithm Scripting](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/)
+
+## Day 11
+### CSS
+  * box-shadow
+  * border-radius
+
 ## Day 10
 ### NodeJS Express MySQL
   * Create a connection with a database
