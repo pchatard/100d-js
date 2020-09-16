@@ -1,4 +1,4 @@
-const { Sequelize, DataTypes, Model, STRING, TEXT } = require("sequelize");
+const { Sequelize, DataTypes, Model } = require("sequelize");
 require("dotenv").config();
 
 // Create a Sequelize instance to connect to a database
