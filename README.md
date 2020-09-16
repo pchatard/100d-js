@@ -2,6 +2,13 @@
 
 This repo holds all my progress during the #100DaysOfCode challenge.
 
+## Day 16
+### SQL
+  * Sequelize ORM: Models, Connection
+
+### JavaScript
+  * End of [Intermediate Algorithm Scripting](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/)
+
 ## Day 15
 ### JavaScript
   * Regular Expressions
