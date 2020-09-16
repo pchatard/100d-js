@@ -105,3 +105,15 @@ D - Durable: When a transaction is over, its new state should persist.
 
 A transaction is validated thanks to the COMMIT; statement, or rejected with ROLLBACK;
 We can start a transaction with START TRANSACTION;
+
+**********************************************************************************
+
+N+1 Problem
+
+Consider a 1-to-many relationship: For example a List that contains many Persons in it.
+If we want to select every lists with its matching persons in it, an ORM would:
+
+1. Select all the Lists : SELECT * FROM Lists;
+2. Select every person for each list: SELECT * FROM Persons WHERE List.id = x;
+
+If we have N lists, we would make N+1 queries., where we could make only 2.
