@@ -1,4 +1,4 @@
-const { Sequelize, DataTypes, Model } = require("sequelize");
+const { Sequelize, DataTypes, Model, STRING, TEXT } = require("sequelize");
 require("dotenv").config();
 
 // Create a Sequelize instance to connect to a database
@@ -41,6 +41,13 @@ class User extends Model {}
 User.init(
 	// Model's attributes (the table's columns)
 	{
+		id: {
+			type: DataTypes.INTEGER,
+			allowNull: false,
+			autoIncrement: true,
+			unique: true,
+			primaryKey: true,
+		},
 		firstName: {
 			type: DataTypes.STRING,
 			allowNull: false,
@@ -51,7 +58,7 @@ User.init(
 			// allowNull is true by default
 		},
 		birthDate: {
-			type: DataTypes.DATETIME,
+			type: DataTypes.DATE,
 			defaultValue: Sequelize.NOW,
 		},
 	},
@@ -95,21 +102,10 @@ databaseTesting();
 // Synchronizing all models at once
 // sequelize.sync();
 
+// In production, Migrations should be used instead of sync()
+
 // Deleting all tables
 // sequelize.drop();
-
-// Data types
-// String
-
-// Boolean
-
-// Numbers
-
-// Dates
-
-// UUIDs
-
-// Others
 
 // Testing the connection
 // sequelize
