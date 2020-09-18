@@ -2,6 +2,14 @@
 
 This repo holds all my progress during the #100DaysOfCode challenge.
 
+## Day 18
+### JavaScript
+  * Completed last projects of the JavaScript Algorithms and Data Structure section of freeCodeCamp
+
+## Day 17
+### NodeJS, Express, MySQL (Sequelize)
+  * Create an API with Express and Sequelize fro [taskr](https://github.com/pchatard/taskr-api)
+
 ## Day 16
 ### SQL
   * Sequelize ORM: Models, Connection
