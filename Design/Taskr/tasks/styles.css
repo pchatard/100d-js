@@ -16,37 +16,47 @@ html {
 
 body {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
-    font-size: 1.6rem;
-    /* max-width: 160rem;
+	font-size: 1.6rem;
+	/* max-width: 160rem;
     margin: 0 auto;
     padding: 5rem 0; */
-    height: 100vh;
+	height: 100vh;
 	display: grid;
 	grid-template-columns: 10rem auto;
 	background-color: #c8d5b9;
 }
 
 h1 {
-	display: inline;
-    font-size: 3rem;
-    font-weight: 500;
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 500;
     padding: 0 3rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 > span {
+    display: block;
+    width: 40%;
+    border: 2px solid #68b0ab;
+    border-radius: 5px;
 }
 
 h2 {
-    display: inline;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #faf3dd;
+	display: inline;
+	font-size: 3rem;
+	font-weight: 400;
+	color: #faf3dd;
 }
 
 h3 {
-    display: inline;
-    font-size: 2.2rem;
+	display: inline;
+	font-size: 2.2rem;
 }
 
 h4 {
-    font-size: 1.8rem;
+	font-size: 1.8rem;
 }
 
 ul {
@@ -104,42 +114,50 @@ main section {
 
 .main-categories > div {
 	margin: 5rem 0;
-	border: 1px solid salmon;
 }
 
 .task-category {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: start;
-    padding: 0 3rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: start;
+	padding: 0 5rem;
 }
 
 .task-category-list-container {
-    width: 100%;
+	width: 100%;
 }
 
 .task {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2rem 3rem;
-    background-color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 2rem 3rem;
+	background-color: #fff;
     border-radius: 5px;
-    /* border: 1px solid red; */
+    margin: 1rem 0;
 }
 
 hr {
-    border: 2px solid #68b0ab;
-    border-radius: 5px;
+	border: 2px solid #68b0ab;
+	border-radius: 5px;
 }
 
 .task-tick {
-    align-self: center;
+	align-self: center;
 }
 
 .task-content {
-    width: 70%;
+	width: 70%;
+}
+
+.task-description {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.task-deadline {
+	color: #68b0ab;
 }
 
 /* Main sum ups elements */
