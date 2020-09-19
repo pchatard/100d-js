@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Tasks Design for Taskr</title>
+	</head>
+	<body>
+		<header id="header">
+			<img src="" alt="taskr app logo" />
+			<nav>
+				<ul>
+					<li>Tasks</li>
+					<li>Goals</li>
+					<li>Projects</li>
+					<li>Calendar</li>
+					<li>Budget</li>
+				</ul>
+			</nav>
+			<div>
+				<p>11:34</p>
+				<span>Sep 19th</span>
+			</div>
+		</header>
+
+		<main>
+			<section class="main-header">
+				<div class="main-header-calendar">
+					<div class="main-header-calendar__days">
+						<h2 id="yesterday">Sep 18</h2>
+						<h1 id="today">Today</h1>
+						<h2 id="tomorrow">Sep 20</h2>
+					</div>
+					|
+					<div class="main-header-calendar__options">...</div>
+				</div>
+				<div class="main-header-actions">
+					<div class="main-header-actions__nav">
+						<div>Categories: <span>3</span> / <span>4</span></div>
+						<span>< ></span>
+					</div>
+					<div class="main-header-actions__profile">
+						<img src="" alt="profile-picture" />
+					</div>
+				</div>
+			</section>
+
+			<section class="main-categories">
+				<div class="task-category">
+					<div class="task-category-header">
+						<h3>Work</h3>
+						| ...
+					</div>
+					<div class="task-category-list-container">
+						<ul class="task-category-list">
+							<li class="task">
+                                <hr>
+								<div class="task-tick">Tick</div>
+								<div class="task-content">
+									<h4>Task title</h4>
+									<p class="task-description">
+										Task Description
+									</p>
+									<p class="task-deadline">20:00</p>
+								</div>
+							</li>
+							<li>Task 2</li>
+							<li>Task 3</li>
+						</ul>
+						Done
+						<ul class="task-category-list-done">
+							<li>Task 4</li>
+						</ul>
+					</div>
+				</div>
+				<div class="task-category">
+					<div class="task-category-header">
+						<h3>Home</h3>
+						| ...
+					</div>
+					<div class="task-category-list-container">
+						<ul class="task-category-list">
+							<li>Task 1</li>
+							<li>Task 2</li>
+							<li>Task 3</li>
+						</ul>
+					</div>
+				</div>
+				<div class="task-category">
+					<div class="task-category-header">
+						<h3>Other</h3>
+						| ...
+					</div>
+					<div class="task-category-list-container">
+						<ul class="task-category-list">
+							<li>Task 1</li>
+						</ul>
+						Done
+						<ul class="task-category-list-done">
+							<li>Task 4</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="main-sumups">
+				<div>Work tasks Sum up</div>
+				<div>Home tasks sum up</div>
+				<div>Other tasks sum up</div>
+			</section>
+		</main>
+	</body>
+</html>
