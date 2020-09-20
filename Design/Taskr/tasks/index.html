@@ -18,7 +18,7 @@
 					<li>Budget</li>
 				</ul>
 			</nav>
-			<div>
+			<div class="header-date">
 				<p>11:34</p>
 				<span>Sep 19th</span>
 			</div>
@@ -38,14 +38,16 @@
 					|
 					<div class="main-header-calendar__options">...</div>
 				</div>
+
 				<div class="main-header-actions">
-					<div class="main-header-actions__nav">
-						<div>Categories: <span>3</span> / <span>4</span></div>
-						<span>< ></span>
-					</div>
-					<div class="main-header-actions__profile">
-						<img src="" alt="profile-picture" />
-					</div>
+					<div class="actions-container">
+						<div class="actions-nav__label">
+							Categories: <span>3 / 4</span>
+						</div>
+						<button class="actions-nav__btn"><</button>
+						<button class="actions-nav__btn">></button>
+                    </div>
+					<img src="" alt="profile-picture" class="actions-profile" />
 				</div>
 			</section>
 
@@ -188,10 +190,51 @@
 					</div>
 				</div>
 			</section>
-			<section class="main-sumups">
-				<div>Work tasks Sum up</div>
-				<div>Home tasks sum up</div>
-				<div>Other tasks sum up</div>
+
+			<section class="main-stats">
+				<div class="category-stats-container">
+					<div class="category-stats">
+						<label class="category-stats-text" for="work-progress">
+							Completed: <span>1/4</span>
+						</label>
+						<progress id="work-progress" max="4" value="1">
+							25%
+						</progress>
+					</div>
+					<button class="category-add">
+						+ Add task
+						<!--Change the + into an icon-->
+					</button>
+				</div>
+				<div class="category-stats-container">
+					<div class="category-stats">
+						<label class="category-stats-text" for="home-progress">
+							Completed: <span>1/4</span>
+						</label>
+						<progress id="home-progress" max="3" value="0">
+							0%
+						</progress>
+					</div>
+
+					<button class="category-add">
+						+ Add task
+						<!--Change the + into an icon-->
+					</button>
+				</div>
+				<div class="category-stats-container">
+					<div class="category-stats">
+						<label class="category-stats-text" for="other-progress">
+							Completed: <span>1/4</span>
+						</label>
+						<progress id="other-progress" max="2" value="1">
+							50%
+						</progress>
+					</div>
+					<button class="category-add">
+						+ Add task
+						<!--Change the + into an icon-->
+					</button>
+				</div>
 			</section>
 		</main>
 	</body>
